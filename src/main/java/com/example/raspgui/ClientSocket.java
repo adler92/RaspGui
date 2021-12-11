@@ -23,11 +23,12 @@ public class ClientSocket {
                 System.out.println("Humid" + humid);
                 System.out.println("Temp" + temp);
 
-
+                double str1 = Double.parseDouble(humid);
+                double str2 = Double.parseDouble(temp);
 
                 } catch (IOException e) {
                 e.printStackTrace();
-            }
+                }
             }
         }).start();
     }
